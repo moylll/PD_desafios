@@ -1,0 +1,356 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+/*FORMATAÇÃO GERAL DE TEXTOS*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/*FORMATAÇÃO DO CABEÇALHO*/
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100px;
+        padding: 0 5%;
+        position: absolute;
+        width: 100%;
+
+        /*atributo adicionado pra ajustar a posição do header em relação à homepage*/
+        z-index: 100;
+    }
+
+    #logo-inicial {
+        width: 130px;
+        position: absolute;
+        display: flex;
+        margin-top: 40px;
+        margin-left: -10px;
+    }
+
+    header h1 {
+        font-size: 40px;
+        color: white;
+    }
+
+    header nav {
+        display: flex;
+        gap: 30px;
+    }
+
+    header nav a {
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: 600px;
+        padding: 8px 16px;
+        border-radius: 99px;
+        transition: 0.3s;
+        color: white;
+    }
+
+
+/*FORMATAÇÃO DOS LINKS DO NAVEGADOR (em especifico, aquele trem de quando passar o mouse por cima e diferenciar a vizualização)*/
+
+    header nav a.active {
+        background: #4572A8;
+    }
+
+    header nav a:hover {
+        background: #4572A8;
+    }
+
+    header nav:hover > a:not(:hover) {
+        background: none;
+    }
+
+
+/*FORMATAÇÃO DA HOMEPAGE*/
+
+    .home {
+        display: flex;
+        height: 100dvh;
+        background: linear-gradient(to top, #d2e2fb 75%, #2484BF);
+
+        /*atributos adicionados para fazer com que oo bug da pagina (a beirada branca que surge quando o movimento das folhas é adicionado) volte ao normal*/
+        position: relative;
+        overflow: hidden;
+    }
+
+    .home img {
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        pointer-events: none; /*atributo que não permite a imagem ser clicável*/
+    }
+
+/*AJUSTES DA POSIÇÃO DO TÍTULO EM RELAÇÃO ÀS IMAGENS DA HOMEPAGE*/
+    .home .title {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        font-size: 80px;
+        text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+        text-align: center;
+    }
+
+/*FORMATAÇÃO DA SEÇÃO INTRODUCTION*/
+    .introduction {
+        padding: 170px;
+        background: #7B9B65;
+        color: white;
+
+        /*a aplicação desses dois atributos a seguir limitam a rolagem do titulo, posicionando o texto acima do titulo quando ultrapassar o limite da homepage*/
+        position: relative; 
+        z-index: 100;
+    }
+
+    .introduction h1 {
+        font-size: 50px;
+        text-align: left;
+        justify-content: left;
+        margin-left: 60px;
+        text-shadow: 10px 10px 5px rgba(0, 0, 0, 0.25);
+    }
+
+    .introduction img {
+        position: relative;
+        pointer-events: none;
+        width: 60%;
+        display: flex;
+        margin-bottom: auto;
+        border-radius: 20px;
+        box-shadow: 40px 40px 10px rgba(0, 0, 0, 0.25);
+    }
+
+    .right-side {
+        float: right;
+        margin-right: -40px;
+        margin-bottom: 70px;
+        margin-top: 50px;
+    }
+
+/*FORMATAÇÃO DA SEÇÃO DESTINATIONS*/
+    .destinations {
+        padding: 50px;
+        background: #356B8C;
+        color: white;
+
+        /*a aplicação desses dois atributos a seguir limitam a rolagem do titulo, posicionando o texto acima do titulo quando ultrapassar o limite da homepage*/
+        position: relative; 
+        z-index: 100;
+    }
+
+    .destinations h1 {
+        font-size: 50px;
+        text-align: center;
+        padding: 50px;
+        margin-bottom: 30px;
+        text-shadow: 10px 10px 4px rgba(0, 0, 0, 0.25);
+    }
+
+    .destinations h2 {
+        font-size: 30px;
+        margin-bottom: 20px;
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+
+    .destinations h3 {
+        font-size: 20px;
+        color: #D3D3D3;
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+
+    .destinations p {
+        text-align: justify;
+        color: #DCDCDC;
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+
+    .mondstadt img {
+        position: relative;
+        margin-left: 300px;
+        margin-bottom: 100px;
+        margin-top: 30px;
+        pointer-events: none;
+        width: 50%;
+        margin-bottom: 50px;
+        border-radius: 20px;
+        box-shadow: 20px 20px 10px rgba(0, 0, 0, 0.25);
+    }
+
+    .liyue img {
+        position: relative;
+        margin-left: 300px;
+        margin-bottom: 100px;
+        margin-top: 30px;
+        pointer-events: none;
+        width: 50%;
+        margin-bottom: 50px;
+        border-radius: 20px;
+        box-shadow: 20px 20px 10px rgba(0, 0, 0, 0.25);
+    }
+
+    .inazuma img {
+        position: relative;
+        margin-left: 300px;
+        margin-bottom: 100px;
+        margin-top: 30px;
+        pointer-events: none;
+        width: 50%;
+        margin-bottom: 50px;
+        border-radius: 20px;
+        box-shadow: 20px 20px 10px rgba(0, 0, 0, 0.25);
+    }
+
+    .sumeru img {
+        position: relative;
+        margin-left: 300px;
+        margin-bottom: 100px;
+        margin-top: 30px;
+        pointer-events: none;
+        width: 50%;
+        margin-bottom: 50px;
+        border-radius: 20px;
+        box-shadow: 20px 20px 10px rgba(0, 0, 0, 0.25);
+    }
+
+    .fontaine img {
+        position: relative;
+        margin-left: 300px;
+        margin-bottom: 100px;
+        margin-top: 40px;
+        pointer-events: none;
+        width: 50%;
+        margin-bottom: 70px;
+        border-radius: 20px;
+        box-shadow: 20px 20px 10px rgba(0, 0, 0, 0.25);
+    }
+
+
+
+/*FORMATAÇÃO DA SEÇÃO COMPANIONSHIP*/
+    .companionship {
+        padding: 50px;
+        background: #2484BF;
+        color: white;
+
+        /*a aplicação desses dois atributos a seguir limitam a rolagem do titulo, posicionando o texto acima do titulo quando ultrapassar o limite da homepage*/
+        position: relative; 
+        z-index: 100;
+    }
+
+    .companionship h1 {
+        font-size: 50px;
+        text-align: center;
+        padding: 10px;
+        text-shadow: 10px 10px 4px rgba(0, 0, 0, 0.25);
+    }
+
+    .companionship h2 {
+        text-align: left;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .companionship img {
+        width: 20%;
+        position: relative;
+        display: flexbox;
+        flex-direction: row;
+        justify-content: space-around;
+        box-shadow: 20px 20px 10px rgba(0, 0, 0, 0.25);
+        border-radius: 20px;
+    }
+
+    .companionship-titulo p {
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    .companionship-content p {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        text-align: justify;
+    }
+
+    .companionship-content {
+        width: 100%;
+
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .companionship-test {
+        flex: 1 1 50%; /*IMPORTANTE, revisar a aplicabilidade desse atributo depois*/
+        justify-content: space-between;
+        padding: 50px;
+        background-color: #3B8DBF;
+        box-shadow: 50px 50px 200px rgba(0, 0, 0, 0.25);
+        border-radius: 100px;
+    }
+
+
+/*FORMATAÇÃO DO FOOTER*/
+    .contact {
+        background: #17401D;
+        color: #C0C0C0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .contact h3 {
+        color: white;
+
+    }
+
+    .contact-element .navigation-bottom a {
+        text-decoration: none;
+        color: #C0C0C0;
+    }
+
+    .contact-element .navigation-bottom li {
+        list-style-type: none;
+    }
+
+    .contact .contact-element img {
+        width: 60%;
+        justify-content: center;
+    }
+
+    #top {
+        display: flex;
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: 600px;
+        padding: 8px 16px;
+        border-radius: 99px;
+        color: white;
+    }
+
+    .contact-element {
+        width: 300px;
+        height: 300px;
+        text-align: center;
+        
+    }
+
+    footer {
+        padding: 50px;
+        margin-top: 50px;
+        text-align: center;
+        background: #17401D;
+        color: #C0C0C0;
+    }
