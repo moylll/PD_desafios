@@ -471,3 +471,34 @@
             padding: 3rem 2rem;
         }
     }
+
+    @media screen and (max-width: 1264px) {
+        .destinations img {     /*RESPONSIVIDADE da seção destinations*/
+            justify-content: center;
+            margin-top: 50px;
+            margin-bottom: 50px;
+            margin-left: 110px;
+            margin-right: auto;
+        }
+
+        .introduction img {     /*RESPONSIVIDADE da seção introdução*/
+            display: none;
+        }
+
+        .introduction h1 {      /*RESPONSIVIDADE da seção introdução*/
+            text-align: center;
+        }
+    }
+
+    
+    @media screen and (max-width: 600px) {
+        .companionship h1 {     /*RESPONSIVIDADE da seção companionship*/
+            font-size: 30px;
+        }
+    }
+
+    @media screen and (max-width: 850px) {
+        .hide {                 /*RESPONSIVIDADE da seção introdução*/
+            display: none;
+        }
+    }
