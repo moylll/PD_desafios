@@ -1,4 +1,4 @@
-/**/
+/*constantes, selecionam classes declarada no index e transformam em variáveis a serem usadas e aplicadas no js*/
 const title = document.querySelector('.title')
 const leafL = document.querySelector('.leaf-L')
 const leafR = document.querySelector('.leaf-R')
@@ -22,8 +22,8 @@ document.addEventListener('scroll', function(){
     leafL.style.marginLeft = -value + 'px' /*rolagem da folha esquerda*/
     leafR.style.marginLeft = value + 'px ' /*rolagem da folha direita*/
 
-    tree.style.marginBottom = -value * 0.5 + 'px' /*rolagem do segundo matinho*/
+    tree.style.marginBottom = -value * 0.5 + 'px' /*rolagem da árvore principal*/
 
-    matinho1.style.marginBottom = -value * 0.02 + 'px' /*rolagem da primeira montanha*/
-    matinho2.style.marginBottom = -value * 0.05 + 'px' /*rolagem da segunda montanha*/
+    matinho1.style.marginBottom = -value * 0.02 + 'px' /*rolagem do primeiro matinho*/
+    matinho2.style.marginBottom = -value * 0.05 + 'px' /*rolagem do segundo matinho*/
 })

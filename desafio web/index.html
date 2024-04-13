@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Teyvat Travel Guide</title>
     
-    <!--LINK CSS-->
+    <!--LINK CSS/ IMAGENS DO FOOTER-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -13,7 +14,9 @@
     <!--MENU DE NAVEGAÇÃO-->
     <header>
         <img id="logo-inicial" src="./media/icon.png" alt="Ícone da personagem Paimon, guia do personagem principal do jogo pelo mundo, Aether">
-        <h1>LOGO</h1>
+        
+        <h1>LOGO</h1> <!--tag desneccessária, mas mantida como forma de organização do espaço no navegador-->
+        
         <nav>
             <a href="#" class="active">Home</a>
             <a href="#destinations">Destinations</a>
@@ -22,6 +25,7 @@
         </nav>
     </header>
 
+    <!--HOMEPAGE-->
     <section class="home">
         <img src="./media/tree-layer.png" class="tree-layer">
 
@@ -32,6 +36,7 @@
         <img src="./media/leaf-L.png" class="leaf-L">
     </section>
 
+    <!--SEÇAO INTRODUCTION-->
     <section id="introduction" class="introduction">
         
         <img class="right-side" src="./media/teyvat-view.jpg" alt="A view of Teyvat, showing mainly the nature of the place">
@@ -42,6 +47,7 @@
         <h1>all around Teyvat!</h1>
     </section>
 
+    <!--SEÇÃO DESTINATIONS-->
     <section id="destinations" class="destinations">
         <h1>Destinations</h1>
             <div class="mondstadt">
@@ -98,6 +104,7 @@
             </div>
     </section>
 
+    <!--SEÇÃO COMPANIONSHIP-->
     <section id="companionship" class="companionship">
         <div class="companionship-titulo">
             <h1>Companionship</h1>
@@ -181,45 +188,74 @@
         </div>
     </section>
 
-    <section id="contact" class="contact">
-        <div class="contact-element">
-            <img src="./media/icon.png" alt="Ícone da personagem Paimon, guia do personagem principal do jogo pelo mundo, Aether">
-        </div>
-        
-        <div class="contact-element">
-            <h3>
-                Links
-            </h3>
-            <ul class="navigation-bottom">
-                <li><a href="#introduction">Home</a></li>
-                <li><a href="#destinations">Destinations</a></li>
-                <li><a href="#companionship">Companionship</a></li>
-            </ul>
-        </div>
-
-        <div class="contact-element">
-            <a id="top" href="#logo-inicial">To the top</a>
-        </div>
-
-        <div class="contact-element">
-            <h3>
-                E-mail
-            </h3>
-            <p>
-                Subscribe to receive more info!
-            </p>
-            <p>
-                <label for="email">E-mail:</label>
-                <input type="email" id="email" placeholder="E-mail">
-            </p>
-        </div>
-        
-    </section>
-
+    <!--FOOTER-->
     <footer>
-        Desenvolvido por Rúbia Luisa Prudêncio Gonçalves - PDITA 256 - © 2024, Todos os direitos reservados
+        <div id="footer_content">
+            <div id="footer_contacts">
+
+                <!--LOGO DO FOOTER-->
+                <img src="./media/icon.png" alt="Ícone da personagem Paimon, guia do personagem principal do jogo pelo mundo, Aether"> 
+                <p>Come travel with us:)</p>
+
+                <!--SEÇÃO SOCIAL MEDIA DO FOOTER-->
+                <div id="footer_social_media">
+                    <a href="#" class="footer-link" id="instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="#" class="footer-link" id="facebook">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+
+                    <a href="#" class="footer-link" id="whatsapp">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <!--LINKS DO FOOTER (redirecionam para as respectivas seções)-->
+            <ul class="footer-list">
+                <li>
+                    <h3>Links</h3>
+                </li>
+                <li>
+                    <a href="#introduction" class="footer-link">Home</a>
+                </li>
+                <li>
+                    <a href="#destinations" class="footer-link">Destinations</a>
+                </li>
+                <li>
+                    <a href="#companionship" class="footer-link">Companionship</a>
+                </li>
+            </ul>
+
+            <!--BOTÃO QUE LEVA AO TOPO-->
+            <a id="top" class="footer-list" href="#logo-inicial">To the top</a>
+
+            <!--EMAIL-->
+            <div id="footer_subscribe">
+                <h3>E-mail</h3>
+
+                <p>
+                    Enter your e-mail for us to get in touch with you :3
+                </p>
+
+                <div id="input_group">
+                    <input type="email" id="email">
+                    <button>
+                        <i class="fa-regular fa-envelope"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!--COPYRIGHT-->
+        <div id="footer_copyright">
+            Developed by Rúbia Luisa Prudêncio Gonçalves - PDITA 256 - © 2024, All rights reserved
+        </div>
     </footer>
 
+    <!--LINK DO ARQUIVO JAVA SCRIPT-->
     <script src="script.js"></script>
 
 </body>
